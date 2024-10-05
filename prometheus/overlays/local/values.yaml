@@ -1,0 +1,27 @@
+server:
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 256Mi
+kube-state-metrics:
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 256Mi
+prometheus-node-exporter:
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 256Mi
+
+prometheus-pushgateway:
+  enabled: false
+alertmanager:
+  enabled: false
+

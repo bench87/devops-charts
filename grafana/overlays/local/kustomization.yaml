@@ -1,0 +1,7 @@
+helmCharts:
+- name: grafana
+  repo: https://grafana.github.io/helm-charts
+  version: 8.5.2
+  releaseName: grafana
+  namespace: grafana
+  valuesFile: values.yaml

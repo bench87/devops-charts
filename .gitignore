@@ -1,0 +1,4 @@
+**/overlays/**/dist/**
+**/overlays/**/charts/**
+*.swp
+.DS_Store

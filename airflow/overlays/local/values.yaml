@@ -1,0 +1,47 @@
+scheduler:
+  resources:
+   limits:
+    memory: 512Mi
+   requests:
+    cpu: 100m
+    memory: 512Mi
+webserver:
+  resources:
+   limits:
+    memory: 1Gi
+   requests:
+    cpu: 100m
+    memory: 1Gi
+worker:
+  resources:
+   limits:
+    memory: 512Mi
+   requests:
+    cpu: 100m
+    memory: 512Mi
+redis:
+  resources:
+   limits:
+    memory: 128Mi
+   requests:
+    cpu: 100m
+    memory: 128Mi
+postgresql:
+  resources:
+   limits:
+    memory: 128Mi
+   requests:
+    cpu: 100m
+    memory: 128Mi
+triggerer:
+  enabled: false
+
+statsd:
+  resources:
+   limits:
+    memory: 128Mi
+   requests:
+    cpu: 100m
+    memory: 128Mi
+
+executor: "CeleryKubernetesExecutor"
