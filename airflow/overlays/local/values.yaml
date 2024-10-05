@@ -8,10 +8,10 @@ scheduler:
 webserver:
   resources:
    limits:
-    memory: 1Gi
+    memory: 2Gi
    requests:
     cpu: 100m
-    memory: 1Gi
+    memory: 2Gi
 worker:
   resources:
    limits:
@@ -26,6 +26,7 @@ redis:
    requests:
     cpu: 100m
     memory: 128Mi
+  password: admin
 postgresql:
   resources:
    limits:
@@ -45,3 +46,9 @@ statsd:
     memory: 128Mi
 
 executor: "CeleryKubernetesExecutor"
+dags:
+  gitSync:
+    enabled: true
+    repo: https://github.com/bench87/example-dags.git
+    branch: main
+    subPath: dags
